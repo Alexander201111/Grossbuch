@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Grossbuch.Views.NewDebtPage"
+             Title="Новый кредит">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Cancel" Clicked="Cancel_Clicked" />
+        <ToolbarItem Text="Save" Clicked="Save_Clicked" />
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+        <StackLayout x:Name="DebtDetail">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.25*" />
+                    <RowDefinition Height="0.75*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Label Text="Дата" Grid.Column="0" Grid.Row="0" />
+                <Label Text="Срок" Grid.Column="1" Grid.Row="0" />
+                <DatePicker Date="{Binding Debt.Date}" Grid.Column="0" Grid.Row="1" />
+                <Entry x:Name="termEntry" Text="{Binding Debt.Term}"  Placeholder="Введите ставку" FontSize="Medium" Grid.Column="1" Grid.Row="1" />
+            </Grid>
+
+            <Entry x:Name="titleEntry" Text="{Binding Debt.Title}"  Placeholder="Введите заголовок" FontSize="Medium" />
+            <Picker x:Name="typePicker" ItemsSource="{Binding ListForPickerType}" SelectedIndexChanged="Picker_SelectedIndexChanged" />
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Label Text="Сумма" Grid.Column="0" Grid.Row="0" />
+                <Label Text="Ставка" Grid.Column="1" Grid.Row="0" />
+                <Entry x:Name="sumEntry" Text="{Binding Debt.Sum}"  Placeholder="Введите сумму" FontSize="Medium" Grid.Column="0" Grid.Row="1" />
+                <Entry x:Name="rateEntry" Text="{Binding Debt.Rate}"  Placeholder="Введите ставку" FontSize="Medium" Grid.Column="1" Grid.Row="1" />
+            </Grid>
+
+            <Entry x:Name="descriptionEntry" Text="{Binding Debt.Description}"  Placeholder="Введите описание" FontSize="Medium" />
+
+            <Label x:Name="messageLabel" TextColor="Red" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

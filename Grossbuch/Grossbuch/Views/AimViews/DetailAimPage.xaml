@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Grossbuch.Views.DetailAimPage"
+             Title="{Binding Title}">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Icon="edit.png" Clicked="Edit_Clicked" />
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+        <StackLayout Spacing="20" Padding="15">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Label Text="{Binding Aim.DateStart}" Grid.Column="0" />
+                <Label Text="{Binding Aim.DateFinish}" Grid.Column="1" />
+            </Grid>
+
+            <Label x:Name="titleLabel" Text="{Binding Aim.Title}" FontSize="Medium" />
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Label x:Name="typeLabel" Text="{Binding Aim.Type}" Grid.Column="0" />
+                <Label x:Name="facilityLabel" Text="{Binding Facility.Title}" Grid.Column="0" />
+            </Grid>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Label x:Name="plannedSumLabel" Text="{Binding PlannedSum}"  FontSize="Medium" Grid.Column="0" />
+                <Label x:Name="currentSumLabel" Text="{Binding CurrentSum}"  FontSize="Medium" Grid.Column="1" />
+            </Grid>
+
+            <Label x:Name="descriptionLabel" Text="{Binding Description}" FontSize="Medium" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

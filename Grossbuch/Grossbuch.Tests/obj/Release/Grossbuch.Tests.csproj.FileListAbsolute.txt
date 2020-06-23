@@ -1,0 +1,11 @@
+C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch.Tests\bin\Release\NUnit3.TestAdapter.dll
+C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch.Tests\bin\Release\NUnit3.TestAdapter.pdb
+C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch.Tests\bin\Release\nunit.engine.dll
+C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch.Tests\bin\Release\nunit.engine.api.dll
+C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch.Tests\bin\Release\Grossbuch.Tests.dll
+C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch.Tests\bin\Release\nunit.framework.dll
+C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch.Tests\bin\Release\Xamarin.UITest.dll
+C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch.Tests\obj\Release\Grossbuch.Tests.csproj.CoreCompileInputs.cache
+C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch.Tests\obj\Release\Grossbuch.Tests.csproj.CopyComplete
+C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch.Tests\obj\Release\Grossbuch.Tests.dll
+C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch.Tests\bin\Release\nunit.framework.pdb

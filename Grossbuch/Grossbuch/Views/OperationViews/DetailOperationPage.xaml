@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Grossbuch.Views.DetailOperationPage"
+             Title="{Binding Title}">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Icon="edit.png" Clicked="Edit_Clicked" />
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+        <StackLayout Spacing="20" Padding="15">
+            <Label Text="Счет:" FontSize="Small" />
+            <Label Text="{Binding Operation.Account.Title}" FontSize="Medium"/>
+            <Label Text="Text:" FontSize="Small" />
+            <Label Text="{Binding Operation.Summ}" FontSize="Medium"/>
+            <Label Text="Категория:" FontSize="Small" />
+            <Label Text="{Binding Operation.Category.Title}" FontSize="Medium"/>
+            <Label Text="Назначение:" FontSize="Small" />
+            <Label Text="{Binding Operation.Purpose.Title}" FontSize="Medium"/>
+            <Label Text="Description:" FontSize="Small" />
+            <Label Text="{Binding Operation.Description}" FontSize="Medium"/>
+
+            <Label Text="Изображения" FontSize="Medium"/>
+            <CollectionView x:Name="ListItems" ItemsLayout="{x:Static ListItemsLayout.HorizontalList}" ItemSizingStrategy="MeasureFirstItem" ItemsSource="{Binding Destinations}" HeightRequest="120" >
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Image Aspect="AspectFill" Source="{Binding ImageUrl}" />
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

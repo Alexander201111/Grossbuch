@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Grossbuch.Views.OperationFromList">
+  
+    <ContentView.Content>
+        <StackLayout Orientation="Horizontal">
+            <StackLayout HorizontalOptions="Center" Orientation="Vertical" VerticalOptions="Center"></StackLayout>
+            <StackLayout Margin="10,0,0,0" HorizontalOptions="FillAndExpand" Orientation="Vertical" VerticalOptions="Center">
+                <StackLayout Margin="0,0,10,10" HorizontalOptions="FillAndExpand" Orientation="Horizontal" VerticalOptions="Center">
+                    <Label FontSize="15" HorizontalOptions="Start" Text="{Binding Account.Title}" TextColor="Gray" XAlign="Start" />
+                    <Label FontSize="15" HorizontalOptions="Start" Text="->" TextColor="Gray" XAlign="Start" />
+                    <Label FontSize="15" HorizontalOptions="Start" Text="{Binding Purpose.Title}" TextColor="Gray" XAlign="Start" />
+                    <Label FontSize="13" HorizontalOptions="EndAndExpand" Text="{Binding Date}" TextColor="Gray" XAlign="End" />
+                    <Label FontSize="13" HorizontalOptions="EndAndExpand" Text="new" TextColor="Red" IsVisible="{Binding Performed}" XAlign="End" />
+                </StackLayout>
+                <StackLayout Margin="0,0,10,0" HorizontalOptions="FillAndExpand" Orientation="Horizontal" VerticalOptions="Center">
+                    <Label Margin="0,0,0,0" FontSize="17" HorizontalOptions="Start" Text="{Binding Category.Title}" TextColor="#000000" XAlign="Start" />
+                    <Label FontSize="17" HorizontalOptions="EndAndExpand" Text="{Binding Summ}" TextColor="Red" XAlign="End" />
+                </StackLayout>
+                <Label x:Name="SumOp" FontSize="13" HorizontalOptions="Start" Text="{Binding Description}" XAlign="Start" />
+                <StackLayout Margin="0,0,10,0" HorizontalOptions="FillAndExpand" Orientation="Horizontal" VerticalOptions="Center">
+                    <BoxView HeightRequest="0.3" HorizontalOptions="FillAndExpand" Color="LightGray" />
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentView.Content>
+    
+</ContentView>

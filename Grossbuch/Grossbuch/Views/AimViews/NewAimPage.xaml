@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Grossbuch.Views.NewAimPage"
+             Title="New Operation">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Cancel" Clicked="Cancel_Clicked" />
+        <ToolbarItem Text="Save" Clicked="Save_Clicked" />
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+        <StackLayout x:Name="AimDetail">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <DatePicker Date="{Binding Aim.DateStart}" Grid.Column="0" />
+                <DatePicker Date="{Binding Aim.DateFinish}" Grid.Column="1" />
+            </Grid>
+
+            <Entry x:Name="titleEntry" Text="{Binding Aim.Title}"  Placeholder="Введите заголовок" FontSize="Medium" />
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Picker x:Name="typePicker" ItemsSource="{Binding ListForPickerType}" SelectedIndexChanged="Picker_SelectedIndexChanged" Grid.Column="0" />
+                <Picker x:Name="facilityPicker" ItemsSource="{Binding Facilities}" ItemDisplayBinding="{Binding Title}" Grid.Column="1" />
+            </Grid>
+
+            <Entry x:Name="sumEntry" Text="{Binding Aim.PlannedSum}"  Placeholder="Введите планируемею сумму" FontSize="Medium" />
+            <Entry x:Name="descriptionEntry" Text="{Binding Aim.Description}"  Placeholder="Введите описание" FontSize="Medium" />
+
+            <Label x:Name="messageLabel" TextColor="Red" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

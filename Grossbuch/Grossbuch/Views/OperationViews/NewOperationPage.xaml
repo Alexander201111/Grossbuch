@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:Xamd.ImageCarousel.Forms.Plugin.Abstractions;assembly=Xamd.ImageCarousel.Forms.Plugin.Abstractions"
+             x:Class="Grossbuch.Views.NewOperationPage"
+             Title="New Operation">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Cancel" Clicked="Cancel_Clicked">
+            <ToolbarItem.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="UWP" Value="cancel.png"/>
+                </OnPlatform>
+            </ToolbarItem.Icon>
+        </ToolbarItem>
+        <ToolbarItem Text="Save" Clicked="Save_Clicked">
+            <ToolbarItem.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="UWP" Value="save.png"/>
+                </OnPlatform>
+            </ToolbarItem.Icon>
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+        <StackLayout x:Name="OperationDetail">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <DatePicker Date="{Binding Operation.Date}" Grid.Column="0" />
+                <Picker x:Name="typePicker" ItemsSource="{Binding ListForPickerType}" SelectedIndexChanged="Picker_SelectedIndexChanged" Grid.Column="1" />
+            </Grid>
+
+            <StackLayout Spacing="10">
+                <Button Text="Сканировать" x:Name="btnScan" Clicked="BtnScan_Clicked"/>
+            </StackLayout>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Label Text="Кошелек" FontSize="Small" Grid.Column="0" Grid.Row="1" />
+                <Picker x:Name="accountPicker" ItemsSource="{Binding Accounts}" ItemDisplayBinding="{Binding Title}" Grid.Column="0" Grid.Row="0" />
+                <Label Text="Назначение" FontSize="Small" Grid.Column="1" Grid.Row="1" />
+                <Picker x:Name="purposePicker" ItemsSource="{Binding Purposes}" ItemDisplayBinding="{Binding Title}" Grid.Column="1" Grid.Row="0" />
+                <Label Text="Категория" FontSize="Small" Grid.Column="2" Grid.Row="1" />
+                <Picker x:Name="categoryPicker" ItemsSource="{Binding Categories}" ItemDisplayBinding="{Binding Title}" Grid.Column="2" Grid.Row="0" />
+            </Grid>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Entry x:Name="sumEntry" Text="{Binding Operation.Summ}"  Placeholder="Введите сумму" FontSize="Medium" Grid.Column="0" />
+                <Picker x:Name="currencyPicker" ItemsSource="{Binding Currencies}" ItemDisplayBinding="{Binding Title}" Grid.Column="1" />
+            </Grid>
+
+            <Label Text="Описание" FontSize="Small" />
+            <Editor Text="{Binding Operation.Description}" FontSize="Medium" Margin="0" />
+            <Entry x:Name="txtBarcode" Placeholder="Сканированный текст"/>
+            <Label x:Name="messageLabel" TextColor="Red" />
+
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Сделать фото" Clicked="TakePhoto" />
+                <Button Text="Выбрать фото" Clicked="GetPhoto" />
+            </StackLayout>
+
+            <CollectionView x:Name="ListItems" ChildAdded="AddToListImages" ItemsLayout="{x:Static ListItemsLayout.HorizontalList}" ItemSizingStrategy="MeasureFirstItem" ItemsSource="{Binding Destinations}" HeightRequest="120" >
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Image Aspect="AspectFill" Source="{Binding ImageUrl}" />
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

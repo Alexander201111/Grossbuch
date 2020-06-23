@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Grossbuch.Views.ListDebtsPage"
+              Title="{Binding Title}"
+             x:Name="BrowseItemsPage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Clicked="AddDebt_Clicked" Icon="add.png" />
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+        <ListView Grid.Row="2" x:Name="DebtsListView"
+                ItemsSource="{Binding Debts}"
+                VerticalOptions="FillAndExpand"
+                HasUnevenRows="true"
+                RefreshCommand="{Binding LoadItemsCommand}"
+                IsPullToRefreshEnabled="true"
+                IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+                CachingStrategy="RecycleElement"
+                ItemSelected="OnItemSelected" >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal">
+                            <StackLayout Margin="10,0,0,0" HorizontalOptions="FillAndExpand" Orientation="Vertical" VerticalOptions="Center">
+                                <Label FontSize="15" HorizontalOptions="Start" Text="{Binding Title}" TextColor="Black" XAlign="Start" />
+                                <StackLayout Margin="0,0,10,10" HorizontalOptions="FillAndExpand" Orientation="Horizontal" VerticalOptions="Center">
+                                    <Label FontSize="15" HorizontalOptions="Start" Text=" от " TextColor="Gray" />
+                                    <Label FontSize="15" HorizontalOptions="Start" Text="{Binding Date}" TextColor="Black" />
+                                    <Label FontSize="15" HorizontalOptions="Start" Text=" на " TextColor="Gray" />
+                                    <Label FontSize="15" HorizontalOptions="Start" Text="{Binding Term}" TextColor="Black" />
+                                    <Label FontSize="15" HorizontalOptions="Start" Text=" мес. " TextColor="Gray" />
+                                </StackLayout>
+                                <StackLayout Margin="0,0,10,0" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                                    <Label FontSize="15" HorizontalOptions="Start" Text="{Binding Sum}" TextColor="Black" />
+                                    <Label FontSize="15" HorizontalOptions="Start" Text=" - " TextColor="Gray" />
+                                    <Label FontSize="15" HorizontalOptions="Start" Text="{Binding Rate}" TextColor="Black" />
+                                    <Label FontSize="15" HorizontalOptions="Start" Text="%" TextColor="Gray" />
+                                </StackLayout>
+                                <Label x:Name="SumOp" FontSize="13" HorizontalOptions="Start" Text="{Binding Description}" XAlign="Start" />
+                                <StackLayout Margin="0,0,10,0" HorizontalOptions="FillAndExpand" Orientation="Horizontal" VerticalOptions="Center">
+                                    <BoxView HeightRequest="0.3" HorizontalOptions="FillAndExpand" Color="LightGray" />
+                                </StackLayout>
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage.Content>
+
+</ContentPage>

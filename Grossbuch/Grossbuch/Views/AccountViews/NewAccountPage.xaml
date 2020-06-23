@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Grossbuch.Views.NewAccountPage"
+             Title="Новый кошелек">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Cancel" Clicked="Cancel_Clicked" />
+        <ToolbarItem Text="Save" Clicked="Save_Clicked" />
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+        <StackLayout Spacing="20" Padding="15">
+            <Label Text="Название" FontSize="Medium" />
+            <Entry Text="{Binding Account.Title}" FontSize="Small" Placeholder="Новый кошелек"/>
+            <Label Text="Баланс" FontSize="Medium" IsVisible="{Binding Account.IsAccount}" />
+            <Editor Text="{Binding Account.Balance}" FontSize="Small" Margin="0" Placeholder="Баланс" IsVisible="{Binding Account.IsAccount}" />
+            <Label Text="Планируемые траты" FontSize="Medium" />
+            <Editor Text="{Binding Account.PlannedSum}" FontSize="Small" Margin="0" Placeholder="Планируемые траты" />
+            <Label x:Name="messageLabel" TextColor="Red" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Grossbuch.Views.FinancialCoefficientsPage"
+             Title="Финансовые коэффициенты">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <DatePicker Date="{Binding DateStart}" IsEnabled="False" Grid.Column="0" />
+                <DatePicker Date="{Binding DateFinish}" DateSelected="DatePicker_PropertyChanged" Grid.Column="1" />
+            </Grid>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Label Text="Доходы = " Grid.Row="0" Grid.Column="0" />
+                <Label Text="{Binding Incomes}" Grid.Row="0" Grid.Column="1" />
+                <Label Text="Расходы = " Grid.Row="1" Grid.Column="0" />
+                <Label Text="{Binding Costs}" Grid.Row="1" Grid.Column="1" />
+            </Grid>
+
+            <StackLayout Margin="0,0,10,0" HorizontalOptions="FillAndExpand" Orientation="Horizontal" VerticalOptions="Center">
+                <BoxView HeightRequest="0.3" HorizontalOptions="FillAndExpand" Color="LightGray" />
+            </StackLayout>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="0.25*" />
+                </Grid.ColumnDefinitions>
+                <Label Text="Доходность = " Grid.Column="0" />
+                <Label Text="{Binding Yield}" Grid.Column="1" />
+                <Button Clicked="YieldButton_Clicked" Text="?" BackgroundColor="#006059" TextColor="White" Grid.Column="2" />
+            </Grid>
+
+            <StackLayout Margin="0,0,10,0" HorizontalOptions="FillAndExpand" Orientation="Horizontal" VerticalOptions="Center">
+                <BoxView HeightRequest="0.3" HorizontalOptions="FillAndExpand" Color="LightGray" />
+            </StackLayout>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="0.25*" />
+                </Grid.ColumnDefinitions>
+                <Label Text="Обеспеченность = " Grid.Column="0" />
+                <Label Text="{Binding Welfare}" Grid.Column="1" />
+                <Button Clicked="WelfareButton_Clicked" Text="?" BackgroundColor="#006059" TextColor="White" Grid.Column="2" />
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

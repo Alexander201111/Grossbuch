@@ -1,0 +1,73 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\sashk\\Desktop\\Grossbuch\\Grossbuch\\Grossbuch.Tests\\Grossbuch.Tests.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\sashk\\Desktop\\Grossbuch\\Grossbuch\\Grossbuch.Tests\\Grossbuch.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\sashk\\Desktop\\Grossbuch\\Grossbuch\\Grossbuch.Tests\\Grossbuch.Tests.csproj",
+        "projectName": "Grossbuch.Tests",
+        "projectPath": "C:\\Users\\sashk\\Desktop\\Grossbuch\\Grossbuch\\Grossbuch.Tests\\Grossbuch.Tests.csproj",
+        "packagesPath": "C:\\Users\\sashk\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sashk\\Desktop\\Grossbuch\\Grossbuch\\Grossbuch.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "D:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\sashk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net461"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net461": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net461": {
+          "dependencies": {
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.12.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[3.13.0, )"
+            },
+            "NUnitTestAdapter": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Xamarin.UITest": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

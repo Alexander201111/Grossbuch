@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Grossbuch.Views.DetailAccountPage"
+             Title="{Binding Title}">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Icon="edit.png" Clicked="Edit_Clicked" />
+        <ToolbarItem Icon="delete.png" Clicked="Delete_Clicked" />
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+        <StackLayout Spacing="20" Padding="15">
+            <Label Text="Название:" FontSize="Medium" />
+            <Label Text="{Binding Account.Title}" FontSize="Small"/>
+            <Label Text="Баланс:" FontSize="Medium" />
+            <Label Text="{Binding Account.Balance}" FontSize="Small"/>
+            <Label Text="Планируемые траты:" FontSize="Medium" />
+            <Label Text="{Binding Account.PlannedSum}" FontSize="Small"/>
+            <Label Text="Реальные траты:" FontSize="Medium" />
+            <Label Text="{Binding Account.TotalSum}" FontSize="Small"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

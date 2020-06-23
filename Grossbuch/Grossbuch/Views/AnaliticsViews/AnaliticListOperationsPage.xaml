@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Grossbuch.Views.AnaliticListOperationsPage"
+             Title="Список транзакций">
+
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="2*" />
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <DatePicker Date="{Binding DateStart}" DateSelected="FormedListOperations" Grid.Column="0" />
+                <DatePicker Date="{Binding DateFinish}" DateSelected="FormedListOperations" Grid.Column="1" />
+            </Grid>
+
+            <SearchBar Text="{Binding Search}" TextChanged="FormedListOperations" Grid.Row="1" />
+
+            <ListView x:Name="OperationsListView"
+                ItemsSource="{Binding Operations}"
+                VerticalOptions="FillAndExpand"
+                HasUnevenRows="true"
+                RefreshCommand="{Binding LoadItemsCommand}"
+                IsPullToRefreshEnabled="true"
+                IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+                CachingStrategy="RecycleElement"
+                ItemSelected="OnItemSelected"
+                Grid.Row="2">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <RelativeLayout>
+                                <StackLayout Padding="10" Orientation="Vertical" RelativeLayout.XConstraint="0">
+                                    <Label Text="{Binding Account.Title}" LineBreakMode="NoWrap" Style="{DynamicResource ListItemTextStyle}" FontSize="16" />
+                                    <Label Text="{Binding Description}" LineBreakMode="NoWrap" Style="{DynamicResource ListItemDetailTextStyle}" FontSize="13" />
+                                </StackLayout>
+                                <Label x:Name="SumLabel" Text="{Binding Sum}" LineBreakMode="NoWrap" HorizontalTextAlignment="End" Style="{DynamicResource ListItemTextStyle}" 
+                                FontSize="16" RelativeLayout.XConstraint = "{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1, Constant=-50}" />
+                            </RelativeLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

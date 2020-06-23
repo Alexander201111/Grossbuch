@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Grossbuch.Views.LoginPage" Title="Авторизация">
+    <!--<ContentPage.ToolbarItems>
+        <ToolbarItem Text="Регистрация" Clicked="OnSignUpButtonClicked" />
+    </ContentPage.ToolbarItems>-->
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="NavigationPrimary">#ffffff</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <Grid BackgroundColor="White">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="80" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="50" />
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="1" Margin="20,0,20,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image Source="logo.png" HeightRequest="70" VerticalOptions="End" />
+                <Entry x:Name="UsernameEntry" HorizontalTextAlignment="Center" Grid.Row="1" Placeholder="Login" PlaceholderColor="#bababa" FontSize="16" />
+                <Entry x:Name="PasswordEntry" HorizontalTextAlignment="Center" Grid.Row="2" Placeholder="Password" PlaceholderColor="#bababa" FontSize="16" IsPassword="True" />
+                <Button Clicked="OnLoginButtonClicked" Text="Вход" BackgroundColor="#006059" TextColor="White" HeightRequest="50" Grid.Row="3" />
+            </Grid>
+            <StackLayout Grid.Row="2" BackgroundColor="#FFFFFF">
+                <Label HeightRequest="1" BackgroundColor="#E3E3E3" />
+                <Label x:Name="SignUp" Text="Нет аккаунта? Регистрация." VerticalOptions="FillAndExpand" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
