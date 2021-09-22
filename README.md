@@ -1,4 +1,3 @@
--------------------------------------------
 -   Настройка окружения для сервера:	  	
 -------------------------------------------
 py -m venv myvenv - создание окружения
@@ -19,13 +18,11 @@ py server/manage.py runserver - запуск сервера
 
 -------------------------------------------
 -   Запуск сервера:		          
--------------------------------------------
-* myvenv\Scripts\activate		
-* py server/manage.py runserver
+myvenv\Scripts\activate		
+py server/manage.py runserver
 
 ---------------------------------------------------------
 -   Настройка окружения и запуск клиента Angular:	
----------------------------------------------------------
 npm install -g @angular/cli
 ng new client - создание проекта
 (npm install --save @angular/material @angular/cdk @angular/animations
@@ -40,7 +37,6 @@ pip install schedule - для таймера)
 
 ----------------------------------------
 -       Screenshots	                   
-----------------------------------------
 - Web
 ![Image alt](https://github.com/Alexander201111/Grossbuch/raw/master/Results/Web_Screenshots/list_operations.png)
 
