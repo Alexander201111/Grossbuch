@@ -49,4 +49,4 @@ pip install schedule - для таймера)
 --------------------------------
 -       Mobile	               -
 --------------------------------
-![Image alt](https://github.com/Alexander201111/Grossbuch/raw/branch/Results/Mobile_Screenshots/list_operations.png)
+![Image alt](https://github.com/Alexander201111/Grossbuch/raw/master/Results/Mobile_Screenshots/list_operations.png)
