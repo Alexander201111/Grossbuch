@@ -37,3 +37,16 @@ npm install --save chart.js - для диаграммы 2
 npm install --save-dev ng2-charts-schematics - для диаграммы 3
 pip install django-cbrf - курс валют
 pip install schedule - для таймера)
+
+----------------------------------------
+-       Screenshots	                   -
+----------------------------------------
+--------------------------------
+-       Web	                   -
+--------------------------------
+![Image alt](https://github.com/Alexander201111/Grossbuch.git/raw/master/Results/Web_Screenshots/list_operations.png)
+
+--------------------------------
+-       Mobile	               -
+--------------------------------
+![Image alt](https://github.com/Alexander201111/Grossbuch.git/raw/branch/Results/Mobile_Screenshots/list_operations.png)
