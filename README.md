@@ -44,9 +44,9 @@ pip install schedule - для таймера)
 --------------------------------
 -       Web	                   -
 --------------------------------
-![Image alt](https://github.com/Alexander201111/Grossbuch.git/raw/master/Results/Web_Screenshots/list_operations.png)
+![Image alt](https://github.com/Alexander201111/Grossbuch/raw/master/Results/Web_Screenshots/list_operations.png)
 
 --------------------------------
 -       Mobile	               -
 --------------------------------
-![Image alt](https://github.com/Alexander201111/Grossbuch.git/raw/branch/Results/Mobile_Screenshots/list_operations.png)
+![Image alt](https://github.com/Alexander201111/Grossbuch/raw/branch/Results/Mobile_Screenshots/list_operations.png)
