@@ -1,0 +1,17 @@
+<div class="card">
+  <div class="card-header">
+      {{operation.date | date: 'dd.MM.yyyy'}}
+  </div>
+  <div class="card-body" title="{{operation.description}}">
+    <div class="row">
+      <a (click)="changeOperation()"><i class="material-icons" style="color:rosybrown">edit</i></a><br>
+      <div class="col s9 s9 l9">
+        {{operation.account.title}}<br>
+        <h5 class="card-title">{{operation.category.title}}</h5>
+      </div>
+      <h3 class="card-title" style="color:red">-{{operation.summ}}</h3>
+      <a (click)="deleteOperation()"><i class="material-icons" style="color:brown">delete</i></a>
+    </div>
+    {{operation.description}}
+  </div>
+</div>

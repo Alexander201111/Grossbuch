@@ -1,1 +1,12 @@
 *.vscode/
+Grossbuch_Web/myvenv/
+Grossbuch_Web/client/node_modules/
+Grossbuch_Web/*.vscode/
+Grossbuch/Grossbuch/bin
+Grossbuch/Grossbuch/obj
+Grossbuch/Grossbuch.Android/bin
+Grossbuch/Grossbuch.Android/obj
+Grossbuch/Grossbuch.iOS/bin
+Grossbuch/Grossbuch.iOS/obj
+Grossbuch/Grossbuch.Tests/bin
+Grossbuch/Grossbuch.Tests/obj

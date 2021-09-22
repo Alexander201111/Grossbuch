@@ -3849,11 +3849,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sashk\\Desktop\\Grossbuch\\Grossbuch\\Grossbuch\\Grossbuch.csproj",
+      "projectUniqueName": "D:\\ALEX\\Универ\\Grossbuch\\Grossbuch\\Grossbuch\\Grossbuch.csproj",
       "projectName": "Grossbuch",
-      "projectPath": "C:\\Users\\sashk\\Desktop\\Grossbuch\\Grossbuch\\Grossbuch\\Grossbuch.csproj",
+      "projectPath": "D:\\ALEX\\Универ\\Grossbuch\\Grossbuch\\Grossbuch\\Grossbuch.csproj",
       "packagesPath": "C:\\Users\\sashk\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sashk\\Desktop\\Grossbuch\\Grossbuch\\Grossbuch\\obj\\",
+      "outputPath": "D:\\ALEX\\Универ\\Grossbuch\\Grossbuch\\Grossbuch\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Microsoft\\Xamarin\\NuGet\\",

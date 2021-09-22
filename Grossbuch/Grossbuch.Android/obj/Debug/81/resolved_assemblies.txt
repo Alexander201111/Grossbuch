@@ -24,7 +24,6 @@ C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch.Android\obj\Debug\81\androi
 C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch.Android\obj\Debug\81\android\assets\Mono.Android.dll
 C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch.Android\obj\Debug\81\android\assets\mscorlib.dll
 C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch.Android\obj\Debug\81\android\assets\Newtonsoft.Json.dll
-C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch.Android\obj\Debug\81\android\assets\nunit.framework.dll
 C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch.Android\obj\Debug\81\android\assets\Plugin.Connectivity.Abstractions.dll
 C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch.Android\obj\Debug\81\android\assets\Plugin.Connectivity.dll
 C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch.Android\obj\Debug\81\android\assets\Plugin.CurrentActivity.dll
@@ -44,7 +43,6 @@ C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch.Android\obj\Debug\81\androi
 C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch.Android\obj\Debug\81\android\assets\System.Interactive.Async.dll
 C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch.Android\obj\Debug\81\android\assets\System.Memory.dll
 C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch.Android\obj\Debug\81\android\assets\System.Runtime.CompilerServices.Unsafe.dll
-C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch.Android\obj\Debug\81\android\assets\System.Runtime.dll
 C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch.Android\obj\Debug\81\android\assets\System.Xml.dll
 C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch.Android\obj\Debug\81\android\assets\System.Xml.Linq.dll
 C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch.Android\obj\Debug\81\android\assets\Xamarin.Android.Arch.Core.Common.dll
@@ -79,7 +77,6 @@ C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch.Android\obj\Debug\81\androi
 C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch.Android\obj\Debug\81\android\assets\System.Data.dll
 C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch.Android\obj\Debug\81\android\assets\System.Numerics.dll
 C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch.Android\obj\Debug\81\android\assets\System.Transactions.dll
-C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch.Android\obj\Debug\81\android\assets\System.Drawing.Common.dll
 C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch.Android\obj\Debug\81\android\assets\System.IO.Compression.dll
 C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch.Android\obj\Debug\81\android\assets\System.IO.Compression.FileSystem.dll
 C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch.Android\obj\Debug\81\android\assets\System.ComponentModel.Composition.dll
@@ -87,6 +84,7 @@ C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch.Android\obj\Debug\81\androi
 C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch.Android\obj\Debug\81\android\assets\System.Runtime.Serialization.dll
 C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch.Android\obj\Debug\81\android\assets\System.ServiceModel.Internals.dll
 C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch.Android\obj\Debug\81\android\assets\System.Web.Services.dll
+C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch.Android\obj\Debug\81\android\assets\System.Runtime.dll
 C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch.Android\obj\Debug\81\android\assets\System.Runtime.InteropServices.RuntimeInformation.dll
 C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch.Android\obj\Debug\81\android\assets\System.AppContext.dll
 C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch.Android\obj\Debug\81\android\assets\System.Runtime.Extensions.dll
@@ -99,7 +97,6 @@ C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch.Android\obj\Debug\81\androi
 C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch.Android\obj\Debug\81\android\assets\System.IO.dll
 C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch.Android\obj\Debug\81\android\assets\System.Linq.dll
 C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch.Android\obj\Debug\81\android\assets\System.IO.FileSystem.Primitives.dll
-C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch.Android\obj\Debug\81\android\assets\Microsoft.Win32.Registry.dll
 C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch.Android\obj\Debug\81\android\assets\System.Threading.Tasks.dll
 C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch.Android\obj\Debug\81\android\assets\System.Threading.dll
 C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch.Android\obj\Debug\81\android\assets\System.Linq.Expressions.dll
@@ -109,6 +106,7 @@ C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch.Android\obj\Debug\81\androi
 C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch.Android\obj\Debug\81\android\assets\System.Reflection.Extensions.dll
 C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch.Android\obj\Debug\81\android\assets\System.Diagnostics.Tracing.dll
 C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch.Android\obj\Debug\81\android\assets\Mono.Security.dll
+C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch.Android\obj\Debug\81\android\assets\System.Numerics.Vectors.dll
 C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch.Android\obj\Debug\81\android\assets\System.Text.Encoding.dll
 C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch.Android\obj\Debug\81\android\assets\System.Text.RegularExpressions.dll
 C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch.Android\obj\Debug\81\android\assets\System.Globalization.dll

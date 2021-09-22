@@ -14,8 +14,6 @@ namespace Grossbuch.Models
         public DbSet<Aim> Aims { get; set; }
         public DbSet<Debt> Debts { get; set; }
 
-        public DbSet<Product> Products { get; set; }
-
         public Context(string _databasePath)
         {
             databasePath = _databasePath;

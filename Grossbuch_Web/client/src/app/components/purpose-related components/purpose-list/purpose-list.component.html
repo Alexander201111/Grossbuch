@@ -1,0 +1,17 @@
+<div class="card">
+  <div class="card-header">
+    Назначение
+    <a data-toggle="modal" data-target="#createPurposeModal" style="align-items: flex-end; cursor: pointer;">
+      <i class="material-icons">add</i>
+    </a>
+  </div>
+  <div class="card-body">
+    <div *ngIf="purposes && purposes.length > 0">
+      <div *ngFor="let purpose of purposes">
+        <app-purpose [purpose]="purpose"></app-purpose>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-create-purpose [newPurpose]="null"></app-create-purpose>

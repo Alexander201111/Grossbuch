@@ -1,0 +1,18 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+            <a class="nav-link" href="">Главная</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="allOperations">Все транзакции</a>
+        </li>
+    </ul>
+
+    <div *ngIf="isAuthorized == true">
+        <button type="button" class="btn btn-success">Личный кабинет</button>
+    </div>
+
+    <div *ngIf="isAuthorized != true">
+        <button type="button" class="btn btn-success" style="align-items: flex-end" (click)="logout()">Выход</button>
+    </div>
+</nav>

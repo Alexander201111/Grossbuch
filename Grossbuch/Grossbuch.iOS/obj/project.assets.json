@@ -4790,11 +4790,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sashk\\Desktop\\Grossbuch\\Grossbuch\\Grossbuch.iOS\\Grossbuch.iOS.csproj",
+      "projectUniqueName": "D:\\ALEX\\Универ\\Grossbuch\\Grossbuch\\Grossbuch.iOS\\Grossbuch.iOS.csproj",
       "projectName": "Grossbuch.iOS",
-      "projectPath": "C:\\Users\\sashk\\Desktop\\Grossbuch\\Grossbuch\\Grossbuch.iOS\\Grossbuch.iOS.csproj",
+      "projectPath": "D:\\ALEX\\Универ\\Grossbuch\\Grossbuch\\Grossbuch.iOS\\Grossbuch.iOS.csproj",
       "packagesPath": "C:\\Users\\sashk\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sashk\\Desktop\\Grossbuch\\Grossbuch\\Grossbuch.iOS\\obj\\",
+      "outputPath": "D:\\ALEX\\Универ\\Grossbuch\\Grossbuch\\Grossbuch.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -4815,8 +4815,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\sashk\\Desktop\\Grossbuch\\Grossbuch\\Grossbuch\\Grossbuch.csproj": {
-              "projectPath": "C:\\Users\\sashk\\Desktop\\Grossbuch\\Grossbuch\\Grossbuch\\Grossbuch.csproj"
+            "D:\\ALEX\\Универ\\Grossbuch\\Grossbuch\\Grossbuch\\Grossbuch.csproj": {
+              "projectPath": "D:\\ALEX\\Универ\\Grossbuch\\Grossbuch\\Grossbuch\\Grossbuch.csproj"
             }
           }
         }

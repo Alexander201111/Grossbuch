@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sashk\\Desktop\\Grossbuch\\Grossbuch\\Grossbuch.iOS\\Grossbuch.iOS.csproj": {}
+    "D:\\ALEX\\Универ\\Grossbuch\\Grossbuch\\Grossbuch.iOS\\Grossbuch.iOS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sashk\\Desktop\\Grossbuch\\Grossbuch\\Grossbuch.iOS\\Grossbuch.iOS.csproj": {
+    "D:\\ALEX\\Универ\\Grossbuch\\Grossbuch\\Grossbuch.iOS\\Grossbuch.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sashk\\Desktop\\Grossbuch\\Grossbuch\\Grossbuch.iOS\\Grossbuch.iOS.csproj",
+        "projectUniqueName": "D:\\ALEX\\Универ\\Grossbuch\\Grossbuch\\Grossbuch.iOS\\Grossbuch.iOS.csproj",
         "projectName": "Grossbuch.iOS",
-        "projectPath": "C:\\Users\\sashk\\Desktop\\Grossbuch\\Grossbuch\\Grossbuch.iOS\\Grossbuch.iOS.csproj",
+        "projectPath": "D:\\ALEX\\Универ\\Grossbuch\\Grossbuch\\Grossbuch.iOS\\Grossbuch.iOS.csproj",
         "packagesPath": "C:\\Users\\sashk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sashk\\Desktop\\Grossbuch\\Grossbuch\\Grossbuch.iOS\\obj\\",
+        "outputPath": "D:\\ALEX\\Универ\\Grossbuch\\Grossbuch\\Grossbuch.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -32,8 +32,8 @@
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "C:\\Users\\sashk\\Desktop\\Grossbuch\\Grossbuch\\Grossbuch\\Grossbuch.csproj": {
-                "projectPath": "C:\\Users\\sashk\\Desktop\\Grossbuch\\Grossbuch\\Grossbuch\\Grossbuch.csproj"
+              "D:\\ALEX\\Универ\\Grossbuch\\Grossbuch\\Grossbuch\\Grossbuch.csproj": {
+                "projectPath": "D:\\ALEX\\Универ\\Grossbuch\\Grossbuch\\Grossbuch\\Grossbuch.csproj"
               }
             }
           }
@@ -93,14 +93,14 @@
         }
       }
     },
-    "C:\\Users\\sashk\\Desktop\\Grossbuch\\Grossbuch\\Grossbuch\\Grossbuch.csproj": {
+    "D:\\ALEX\\Универ\\Grossbuch\\Grossbuch\\Grossbuch\\Grossbuch.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sashk\\Desktop\\Grossbuch\\Grossbuch\\Grossbuch\\Grossbuch.csproj",
+        "projectUniqueName": "D:\\ALEX\\Универ\\Grossbuch\\Grossbuch\\Grossbuch\\Grossbuch.csproj",
         "projectName": "Grossbuch",
-        "projectPath": "C:\\Users\\sashk\\Desktop\\Grossbuch\\Grossbuch\\Grossbuch\\Grossbuch.csproj",
+        "projectPath": "D:\\ALEX\\Универ\\Grossbuch\\Grossbuch\\Grossbuch\\Grossbuch.csproj",
         "packagesPath": "C:\\Users\\sashk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sashk\\Desktop\\Grossbuch\\Grossbuch\\Grossbuch\\obj\\",
+        "outputPath": "D:\\ALEX\\Универ\\Grossbuch\\Grossbuch\\Grossbuch\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Microsoft\\Xamarin\\NuGet\\",

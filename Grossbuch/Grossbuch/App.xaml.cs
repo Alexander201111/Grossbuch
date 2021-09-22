@@ -22,7 +22,7 @@ namespace Grossbuch
             using (var db = new Context(dbPath))
             {
                 // Удаляем бд, если она существует
-                db.Database.EnsureDeleted();
+                //db.Database.EnsureDeleted();
 
                 // Создаем бд, если она отсутствует
                 db.Database.EnsureCreated();

@@ -1,0 +1,90 @@
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <label class="input-group-text" for="inputGroupSelect01">Дата</label>
+  </div>
+  <input [owlDateTimeTrigger]="dt3" [owlDateTime]="dt3" [(ngModel)]="newOperation.date">
+  <owl-date-time [pickerType]="'calendar'" #dt3></owl-date-time>
+</div>
+
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <label class="input-group-text" for="inputGroupSelect01">Кошелек</label>
+  </div>
+  <select class="custom-select" id="inputGroupSelect01" (change)="onChangeAccount($event.target.value)">
+    <option selected>
+      <div *ngIf="creating == false">{{newOperation.account.title}}</div>
+      <div *ngIf="creating == true">Выберите...</div>
+    </option>
+    <option *ngFor="let account of accounts">{{account.title}}</option>
+  </select>
+</div>
+
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <label class="input-group-text" for="inputGroupSelect01">Категория</label>
+  </div>
+  <select class="custom-select" id="inputGroupSelect02" (change)="onChangeCategory($event.target.value)">
+    <option selected>
+      <div *ngIf="creating != true">{{newOperation.category.title}}</div>
+      <div *ngIf="creating == true">Выберите...</div>
+    </option>
+    <option *ngFor="let category of categories">{{category.title}}</option>
+  </select>
+</div>
+
+<div class="input-group mb-3">
+  <div class="dropdown">
+
+    <div *ngIf="creating != true">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        {{newOperation.currency.title}}
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        <div *ngIf="currencies && currencies.length > 0">
+          <div *ngFor="let currency of currencies">
+            <a class="dropdown-item" (click)="onChangeCurrency(currency.title)">{{currency.title}}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="creating == true">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        {{chosenCurrency}}
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        <div *ngIf="currencies && currencies.length > 0">
+          <div *ngFor="let currency of currencies">
+            <a class="dropdown-item" (click)="onChangeCurrency(currency.title)">{{currency.title}}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <input type="text" class="form-control" [(ngModel)]="newOperation.summ">
+</div>
+
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <label class="input-group-text" for="inputGroupSelect01">Назначение</label>
+  </div>
+  <select class="custom-select" id="inputGroupSelect02" (change)="onChangePurpose($event.target.value)">
+    <option selected>
+      <div *ngIf="creating == false">{{newOperation.purpose.title}}</div>
+      <div *ngIf="creating == true">Выберите...</div>
+    </option>
+    <option *ngFor="let purpose of purposes">{{purpose.title}}</option>
+  </select>
+</div>
+
+<div class="input-group">
+  <div class="input-group-prepend">
+    <span class="input-group-text">Описание</span>
+  </div>
+  <textarea class="form-control" aria-label="With textarea" [(ngModel)]="newOperation.description"></textarea>
+</div>
+
+<button type="button" class="btn btn-success" (click)="clickSave()">Сохранить</button>
+<button type="button" class="btn btn-danger" (click)="clickCancel()">Отменить</button>

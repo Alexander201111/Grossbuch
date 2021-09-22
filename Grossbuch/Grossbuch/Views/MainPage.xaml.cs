@@ -54,9 +54,6 @@ namespace Grossbuch.Views
                     case (int)MenuItemType.Purposes:
                         MenuPages.Add(id, new NavigationPage(new ListPurposesPage(User)));
                         break;
-                    case (int)MenuItemType.Products:
-                        MenuPages.Add(id, new NavigationPage(new ListProductsPage(User)));
-                        break;
                     case (int)MenuItemType.Settings:
                         MenuPages.Add(id, new NavigationPage(new SettingsPage(User)));
                         break;

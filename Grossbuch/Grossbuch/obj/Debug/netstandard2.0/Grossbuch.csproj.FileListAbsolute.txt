@@ -5,6 +5,7 @@ C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch\bin\Debug\netstandard2.0\nu
 C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch\bin\Debug\netstandard2.0\Grossbuch.deps.json
 C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch\bin\Debug\netstandard2.0\Grossbuch.dll
 C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch\bin\Debug\netstandard2.0\Grossbuch.pdb
+C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch\obj\Debug\netstandard2.0\Grossbuch.csprojAssemblyReference.cache
 C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch\obj\Debug\netstandard2.0\Views\AboutPage.xaml.g.cs
 C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch\obj\Debug\netstandard2.0\Views\AccountViews\DetailAccountPage.xaml.g.cs
@@ -35,6 +36,7 @@ C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch\obj\Debug\netstandard2.0\Vi
 C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch\obj\Debug\netstandard2.0\Views\OperationViews\NewOperationPage.xaml.g.cs
 C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch\obj\Debug\netstandard2.0\Views\OperationViews\OperationFromList.xaml.g.cs
 C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch\obj\Debug\netstandard2.0\Views\SettingsPage.xaml.g.cs
+C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch\obj\Debug\netstandard2.0\Grossbuch.csproj.CoreCompileInputs.cache
 C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch\obj\Debug\netstandard2.0\Grossbuch.AssemblyInfoInputs.cache
 C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch\obj\Debug\netstandard2.0\Grossbuch.AssemblyInfo.cs
 C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch\obj\Debug\netstandard2.0\XamlC.stamp
@@ -83,6 +85,3 @@ D:\ALEX\Универ\Grossbuch\Grossbuch\Grossbuch\obj\Debug\netstandard2.0\Gros
 D:\ALEX\Универ\Grossbuch\Grossbuch\Grossbuch\obj\Debug\netstandard2.0\Grossbuch.dll
 D:\ALEX\Универ\Grossbuch\Grossbuch\Grossbuch\obj\Debug\netstandard2.0\Grossbuch.pdb
 D:\ALEX\Универ\Grossbuch\Grossbuch\Grossbuch\obj\Debug\netstandard2.0\XamlC.stamp
-C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch\obj\Debug\netstandard2.0\Views\ProductViews\DetailProductPage.xaml.g.cs
-C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch\obj\Debug\netstandard2.0\Views\ProductViews\ListProductsPage.xaml.g.cs
-C:\Users\sashk\Desktop\Grossbuch\Grossbuch\Grossbuch\obj\Debug\netstandard2.0\Views\ProductViews\NewProductPage.xaml.g.cs

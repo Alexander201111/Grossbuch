@@ -1,0 +1,17 @@
+<div class="card">
+  <div class="card-header">
+    Счета
+    <a data-toggle="modal" data-target="#createAccountModal" style="align-items: flex-end; cursor: pointer;">
+      <i class="material-icons">add</i>
+    </a>
+  </div>
+  <div class="card-body">
+    <div *ngIf="accounts && accounts.length > 0">
+      <div *ngFor="let account of accounts">
+        <app-account [account]="account"></app-account>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-create-account [newAccount]="null"></app-create-account>

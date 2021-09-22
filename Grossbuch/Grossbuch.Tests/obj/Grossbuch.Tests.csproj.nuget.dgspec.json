@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sashk\\Desktop\\Grossbuch\\Grossbuch\\Grossbuch.Tests\\Grossbuch.Tests.csproj": {}
+    "D:\\ALEX\\Универ\\Grossbuch\\Grossbuch\\Grossbuch.Tests\\Grossbuch.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sashk\\Desktop\\Grossbuch\\Grossbuch\\Grossbuch.Tests\\Grossbuch.Tests.csproj": {
+    "D:\\ALEX\\Универ\\Grossbuch\\Grossbuch\\Grossbuch.Tests\\Grossbuch.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sashk\\Desktop\\Grossbuch\\Grossbuch\\Grossbuch.Tests\\Grossbuch.Tests.csproj",
+        "projectUniqueName": "D:\\ALEX\\Универ\\Grossbuch\\Grossbuch\\Grossbuch.Tests\\Grossbuch.Tests.csproj",
         "projectName": "Grossbuch.Tests",
-        "projectPath": "C:\\Users\\sashk\\Desktop\\Grossbuch\\Grossbuch\\Grossbuch.Tests\\Grossbuch.Tests.csproj",
+        "projectPath": "D:\\ALEX\\Универ\\Grossbuch\\Grossbuch\\Grossbuch.Tests\\Grossbuch.Tests.csproj",
         "packagesPath": "C:\\Users\\sashk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sashk\\Desktop\\Grossbuch\\Grossbuch\\Grossbuch.Tests\\obj\\",
+        "outputPath": "D:\\ALEX\\Универ\\Grossbuch\\Grossbuch\\Grossbuch.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [

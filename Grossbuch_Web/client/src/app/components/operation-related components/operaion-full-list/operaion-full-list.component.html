@@ -1,0 +1,108 @@
+<app-navbar></app-navbar>
+<div class="search-input">
+  <div class="input-field" class="row">
+    <input id="search" #focusable class="form-control" style="width: 50%" type="text" [(ngModel)]="searchInput">
+    <div class="search-input-clear" *ngIf="searchInput">
+      <span (click)="clearSearch()"><i class="material-icons">clear</i></span>
+    </div>
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        {{selectedSotredSumm}}
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <div *ngFor="let sort of sortedSumm">
+          <a class="dropdown-item" (click)="onChangeSortSum(sort)">{{sort}}</a>
+        </div>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        {{selectedSotredDate}}
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <div *ngFor="let sort of sortedDate">
+          <a class="dropdown-item" (click)="onChangeSortDate(sort)">{{sort}}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+
+<div class="alert alert-primary" role="alert" class="row">
+  <div class="col-3">
+    <div class="input-group mb-3">
+      От:
+      <input [owlDateTimeTrigger]="dt3" [owlDateTime]="dt3" [(ngModel)]="dateStart">
+      <owl-date-time [pickerType]="'calendar'" #dt3 (afterPickerClosed)="changeDate()"></owl-date-time>
+    </div>
+    <div class="input-group mb-3">
+      До:
+      <input [owlDateTimeTrigger]="dt4" [owlDateTime]="dt4" [(ngModel)]="dateFinish">
+      <owl-date-time [pickerType]="'calendar'" #dt4 (afterPickerClosed)="changeDate()"></owl-date-time>
+    </div>
+    <div class="search-input-clear" *ngIf="dateStart || dateFinish">
+      <span (click)="clearDate()"><i class="material-icons">clear</i></span>
+    </div>
+    <br>
+    <div class="card">
+      <div class="card-body">
+        <section class="example-section">
+          <div *ngIf="accounts && accounts.length > 0">
+            <div *ngFor="let account of accounts">
+              <mat-checkbox class="example-margin" [(ngModel)]="account.checked" (click)="accountCheck(account)">
+                {{account.title}}
+              </mat-checkbox>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <section class="example-section">
+            <div *ngIf="categories && categories.length > 0">
+              <div *ngFor="let category of categories">
+                <mat-checkbox class="example-margin" [(ngModel)]="category.checked" (click)="categoryCheck(category)">
+                  {{category.title}}
+                </mat-checkbox>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <section class="example-section">
+            <div *ngIf="purposes && purposes.length > 0">
+              <div *ngFor="let purpose of purposes">
+                <mat-checkbox class="example-margin" [(ngModel)]="purpose.checked">{{purpose.title}}</mat-checkbox>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6">
+    <span position="left" class="alert alert-success" role="alert">
+      Мин. сумма: {{minSum}}
+    </span>
+    <span position="right" class="alert alert-success" role="alert">
+      Макс. сумма: {{maxSum}}
+    </span>
+    <span class="alert alert-info" role="alert">
+      Общая сумма: {{totalSum}}
+    </span>
+    <div *ngIf="operations && operations.length > 0">
+      <div *ngFor="let operation of operations">
+        <div *ngIf="operation.showed">
+          <app-operation [operation]="operation"></app-operation>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

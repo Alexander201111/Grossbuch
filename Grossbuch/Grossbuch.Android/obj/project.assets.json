@@ -3398,11 +3398,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sashk\\Desktop\\Grossbuch\\Grossbuch\\Grossbuch.Android\\Grossbuch.Android.csproj",
+      "projectUniqueName": "D:\\ALEX\\Универ\\Grossbuch\\Grossbuch\\Grossbuch.Android\\Grossbuch.Android.csproj",
       "projectName": "Grossbuch.Android",
-      "projectPath": "C:\\Users\\sashk\\Desktop\\Grossbuch\\Grossbuch\\Grossbuch.Android\\Grossbuch.Android.csproj",
+      "projectPath": "D:\\ALEX\\Универ\\Grossbuch\\Grossbuch\\Grossbuch.Android\\Grossbuch.Android.csproj",
       "packagesPath": "C:\\Users\\sashk\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sashk\\Desktop\\Grossbuch\\Grossbuch\\Grossbuch.Android\\obj\\",
+      "outputPath": "D:\\ALEX\\Универ\\Grossbuch\\Grossbuch\\Grossbuch.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -3423,8 +3423,8 @@
       "frameworks": {
         "monoandroid81": {
           "projectReferences": {
-            "C:\\Users\\sashk\\Desktop\\Grossbuch\\Grossbuch\\Grossbuch\\Grossbuch.csproj": {
-              "projectPath": "C:\\Users\\sashk\\Desktop\\Grossbuch\\Grossbuch\\Grossbuch\\Grossbuch.csproj"
+            "D:\\ALEX\\Универ\\Grossbuch\\Grossbuch\\Grossbuch\\Grossbuch.csproj": {
+              "projectPath": "D:\\ALEX\\Универ\\Grossbuch\\Grossbuch\\Grossbuch\\Grossbuch.csproj"
             }
           }
         }

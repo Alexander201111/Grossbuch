@@ -1,0 +1,4 @@
+<a data-toggle="modal" style="cursor: pointer;" (click)="changeAccount()" data-target="#createAccountModal"><i class="material-icons">account_balance</i>{{account.title}} - {{account.balance}}</a>
+<a data-toggle="modal" style="cursor: pointer;" (click)="addToAccount()" data-target="#addToAccountModal"><i class="material-icons">add</i></a>
+
+<app-add-account [newAccount]="null"></app-add-account>
