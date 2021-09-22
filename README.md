@@ -37,8 +37,8 @@ pip install schedule - для таймера)
 
 ----------------------------------------
 -     Screenshots	                   
-- Web
+- Web 
 ![Image alt](https://github.com/Alexander201111/Grossbuch/raw/master/Results/Web_Screenshots/list_operations.png)
 
-- Mobile
+- Mobile 
 ![Image alt](https://github.com/Alexander201111/Grossbuch/raw/master/Results/Mobile_Screenshots/list_operations.png)
