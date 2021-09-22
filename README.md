@@ -1,4 +1,4 @@
--   Настройка окружения для сервера:	  	
+-     Настройка окружения для сервера:	  	
 -------------------------------------------
 py -m venv myvenv - создание окружения
 myvenv\Scripts\activate - запуск окружения (Linux: source myvenv/bin/activate)
@@ -17,12 +17,12 @@ py manage.py createsuperuser - создание суперпользовател
 py server/manage.py runserver - запуск сервера
 
 -------------------------------------------
--   Запуск сервера:		          
+-     Запуск сервера:		          
 myvenv\Scripts\activate		
 py server/manage.py runserver
 
 ---------------------------------------------------------
--   Настройка окружения и запуск клиента Angular:	
+-     Настройка окружения и запуск клиента Angular:        
 npm install -g @angular/cli
 ng new client - создание проекта
 (npm install --save @angular/material @angular/cdk @angular/animations
@@ -36,7 +36,7 @@ pip install django-cbrf - курс валют
 pip install schedule - для таймера)
 
 ----------------------------------------
--       Screenshots	                   
+-     Screenshots	                   
 - Web
 ![Image alt](https://github.com/Alexander201111/Grossbuch/raw/master/Results/Web_Screenshots/list_operations.png)
 
